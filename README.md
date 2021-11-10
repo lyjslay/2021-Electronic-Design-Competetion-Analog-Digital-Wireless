@@ -18,7 +18,8 @@
 <img width="852" alt="111" src="https://user-images.githubusercontent.com/48402362/141068510-762280c5-7d74-44c6-b081-b32212d65562.jpg">
 
 - 混合后调制的信号
-<img width="852" alt="IMG_20211105_173612" src="https://user-images.githubusercontent.com/48402362/141068578-d9ade742-ccfc-4418-a77e-709c4a138065.jpg">
+![IMG_20211105_173612](https://user-images.githubusercontent.com/48402362/141069541-bf6c17c0-da25-4473-b21c-22b471b00b61.jpg)
+
 
 - 调制信号频谱
 <img width="852" alt="IMG_20211105_175836" src="https://user-images.githubusercontent.com/48402362/141068599-b1ee742e-84a6-4a2b-8885-9528d4c55f82.jpg">
