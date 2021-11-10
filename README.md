@@ -14,7 +14,7 @@
 <img width="852" alt="屏幕截图 2021-11-07 112014" src="https://user-images.githubusercontent.com/48402362/141067415-7d31e1c4-3c3b-4e75-9d03-5225be0bef6e.png">
 # Results
 - 解调出的信号
-![111](https://user-images.githubusercontent.com/48402362/141068510-762280c5-7d74-44c6-b081-b32212d65562.jpg)
+- <img width="852" alt="111" src="https://user-images.githubusercontent.com/48402362/141068510-762280c5-7d74-44c6-b081-b32212d65562.jpg">
 - 混合后调制的信号
 ![IMG_20211105_173612](https://user-images.githubusercontent.com/48402362/141068578-d9ade742-ccfc-4418-a77e-709c4a138065.jpg)
 - 调制信号频谱
