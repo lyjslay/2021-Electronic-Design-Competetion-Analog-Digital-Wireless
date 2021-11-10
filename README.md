@@ -13,6 +13,5 @@
 # Simulation Waveform
 <img width="852" alt="屏幕截图 2021-11-07 112014" src="https://user-images.githubusercontent.com/48402362/141067415-7d31e1c4-3c3b-4e75-9d03-5225be0bef6e.png">
 # Results
-![IMG_20211105_173612](https://user-images.githubusercontent.com/48402362/141068229-342cea7c-737c-4978-9b4f-e018c7bd01de.jpg)
-![IMG_20211105_175836](https://user-images.githubusercontent.com/48402362/141068234-b30be292-1da9-4db7-b4d7-f82000563706.jpg)
-![QQ图片20211110152343](https://user-images.githubusercontent.com/48402362/141068245-57cab37f-4b75-4fc4-84a6-159c5fbfad9f.jpg)
+![IMG_20211105_173612](https://user-images.githubusercontent.com/48402362/141068344-25e7c271-e6c7-4f51-a965-57f65ceea4e0.jpg)
+
