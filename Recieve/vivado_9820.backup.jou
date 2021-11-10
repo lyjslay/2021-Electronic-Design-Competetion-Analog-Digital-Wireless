@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 07:54:26 2021
+# Process ID: 9820
+# Current directory: F:/DianSai/2021/Recieve/Recieve
+# Command line: vivado.exe F:\DianSai\2021\Recieve\Recieve\Recieve.xpr
+# Log file: F:/DianSai/2021/Recieve/Recieve/vivado.log
+# Journal file: F:/DianSai/2021/Recieve/Recieve\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/DianSai/2021/Recieve/Recieve/Recieve.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/total_cnt}} {{/recv_tb/u_reciever/error}} 
+restart
+run all
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/analog_cnt}} {{/recv_tb/u_reciever/digital_cnt}} 
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/analog_data_reg_tmp}} 
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/recv_analog_done}} {{/recv_tb/u_reciever/recv_digital_done}} 
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top bin2BCD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation -mode post-implementation -type functional
+update_compile_order -fileset sim_1
+launch_simulation -mode post-implementation -type functional
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source bin2BCD_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/bin2BCD_tb/bincode}} {{/bin2BCD_tb/seg_bit0}} {{/bin2BCD_tb/seg_bit1}} {{/bin2BCD_tb/seg_bit2}} {{/bin2BCD_tb/seg_bit3}} 
+restart
+restart
+run all
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait F:/DianSai/2021/Recieve/Recieve/schematic.pdf
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top recv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_14
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/shutdown_sig}} 
+restart
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/feature_data_reg}} 
+restart
+restart
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+current_design impl_1
+close_design
+close_design
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DA_data[11]} {DA_data[10]} {DA_data[9]} {DA_data[8]} {DA_data[7]} {DA_data[6]} {DA_data[5]} {DA_data[4]} {DA_data[3]} {DA_data[2]} {DA_data[1]} {DA_data[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list DA_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list deAM_input]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list DIO]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+close_design
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DA_data[13]} {DA_data[12]} {DA_data[11]} {DA_data[10]} {DA_data[9]} {DA_data[8]} {DA_data[7]} {DA_data[6]} {DA_data[5]} {DA_data[4]} {DA_data[3]} {DA_data[2]} {DA_data[1]} {DA_data[0]}]]
+place_ports {DA_data[1]} J14
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property part xc7z010clg400-2 [current_project]
+launch_runs impl_2 -jobs 6
+wait_on_run impl_2
+close_design
+open_run impl_2
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DA_data[13]} {DA_data[12]} {DA_data[11]} {DA_data[10]} {DA_data[9]} {DA_data[8]} {DA_data[7]} {DA_data[6]} {DA_data[5]} {DA_data[4]} {DA_data[3]} {DA_data[2]} {DA_data[1]} {DA_data[0]}]]
+place_ports {DA_data[0]} K14
+place_ports {DA_data[1]} J14
+place_ports {DA_data[2]} H15
+place_ports {DA_data[3]} G15
+place_ports {DA_data[4]} H16
+place_ports {DA_data[5]} H17
+place_ports {DA_data[6]} G17
+place_ports {DA_data[7]} G18
+place_ports {DA_data[8]} E18
+place_ports {DA_data[9]} E19
+place_ports {DA_data[10]} D19
+place_ports {DA_data[11]} D20
+place_ports {DA_data[12]} M17
+place_ports {DA_data[13]} M18
+set_property IOSTANDARD LVCMOS33 [get_ports [list DA_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list deAM_input]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list DIO]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sclk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list sys_clk]]
+place_ports DA_clk L16
+place_ports DIO F19
+place_ports rclk G19
+place_ports sclk J18
+place_ports sys_clk U18
+place_ports rst_n N15
+place_ports deAM_input P14
+file mkdir F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/constrs_1/new
+close [ open F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/constrs_1/new/ZYNQ_Recv.xdc w ]
+add_files -fileset constrs_1 F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/constrs_1/new/ZYNQ_Recv.xdc
+set_property target_constrs_file F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/constrs_1/new/ZYNQ_Recv.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/DianSai/2021/Recieve/Recieve/Recieve.runs/impl_2/Recv_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/DianSai/2021/Recieve/Recieve/Recieve.runs/impl_2/Recv_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/DianSai/2021/Recieve/Recieve/Recieve.runs/impl_2/Recv_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top bin2BCD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source bin2BCD_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/bin2BCD_tb/sys_clk}} {{/bin2BCD_tb/rst_n}} {{/bin2BCD_tb/start}} {{/bin2BCD_tb/bin}} {{/bin2BCD_tb/bcd}} {{/bin2BCD_tb/valid}} 
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source bin2BCD_tb.tcl
+save_wave_config {F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg}
+close_sim
+current_sim simulation_21
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source bin2BCD_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source bin2BCD_tb.tcl
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/DianSai/2021/Recieve/Recieve/Recieve.runs/impl_2/Recv_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 6
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {F:/DianSai/2021/Recieve/Recieve/Recieve.runs/impl_2/Recv_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

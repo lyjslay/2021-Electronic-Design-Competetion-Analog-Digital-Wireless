@@ -1,0 +1,1350 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 14:50:05 2021
+# Process ID: 4072
+# Current directory: F:/DianSai/2021/CarrierWave
+# Command line: vivado.exe F:\DianSai\2021\CarrierWave\CarrierWave.xpr
+# Log file: F:/DianSai/2021/CarrierWave/vivado.log
+# Journal file: F:/DianSai/2021/CarrierWave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/DianSai/2021/CarrierWave/CarrierWave.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 779.172 ; gain = 177.074
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+create_fileset -constrset constrs_2
+add_files -fileset constrs_2 -norecurse F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+export_ip_user_files -of_objects  [get_files F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+set_property top keyarray_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'keyarray_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj keyarray_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/keyarray_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyarray_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot keyarray_tb_behav xil_defaultlib.keyarray_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.keyarray_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keyarray_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim/xsim.dir/keyarray_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov  7 15:57:06 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "keyarray_tb_behav -key {Behavioral:sim_1:Functional:keyarray_tb} -tclbatch {keyarray_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+WARNING: Simulation object /led_tb/sys_clk was not found in the design.
+WARNING: Simulation object /led_tb/rst_n was not found in the design.
+WARNING: Simulation object /led_tb/ok_sig was not found in the design.
+WARNING: Simulation object /led_tb/sclk was not found in the design.
+WARNING: Simulation object /led_tb/rclk was not found in the design.
+WARNING: Simulation object /led_tb/DIO was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit0_reg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit1_reg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit2_reg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit3_reg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit0_seg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit1_seg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit2_seg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/bit3_seg was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/state was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/clk_div was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/cnt_main was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/cnt_write was not found in the design.
+WARNING: Simulation object /led_tb/u_seg_led/data_reg was not found in the design.
+source keyarray_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 927.184 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 927.184 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/keyarray_tb/sys_clk}} {{/keyarray_tb/rst_n}} {{/keyarray_tb/col}} {{/keyarray_tb/row}} {{/keyarray_tb/key_out}} {{/keyarray_tb/matrix_down_flag}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 927.184 ; gain = 0.000
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'keyarray_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj keyarray_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/keyarray_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyarray_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot keyarray_tb_behav xil_defaultlib.keyarray_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.keyarray_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keyarray_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "keyarray_tb_behav -key {Behavioral:sim_1:Functional:keyarray_tb} -tclbatch {keyarray_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source keyarray_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'keyarray_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj keyarray_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/keyarray_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keyarray_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot keyarray_tb_behav xil_defaultlib.keyarray_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.keyarray_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot keyarray_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "keyarray_tb_behav -key {Behavioral:sim_1:Functional:keyarray_tb} -tclbatch {keyarray_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source keyarray_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 939.305 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 16:51:32 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 16:51:32 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 17:08:29 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 17:08:29 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property constrset constrs_1 [get_runs synth_1]
+set_property constrset constrs_1 [get_runs impl_1]
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 17:13:20 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 17:13:20 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/21025DA1030A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/21025DA1030A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+set_property top Transmit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2458] undeclared symbol keydown_flag, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim/xsim.dir/Transmit_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov  7 17:44:50 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2075.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+WARNING: Simulation object /keyarray_tb/sys_clk was not found in the design.
+WARNING: Simulation object /keyarray_tb/rst_n was not found in the design.
+WARNING: Simulation object /keyarray_tb/col was not found in the design.
+WARNING: Simulation object /keyarray_tb/row was not found in the design.
+WARNING: Simulation object /keyarray_tb/key_out was not found in the design.
+WARNING: Simulation object /keyarray_tb/matrix_down_flag was not found in the design.
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:01:00 . Memory (MB): peak = 2075.836 ; gain = 0.598
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:09 ; elapsed = 00:01:02 . Memory (MB): peak = 2075.836 ; gain = 0.598
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2075.836 ; gain = 0.598
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/sys_clk}} {{/Transmit_tb/rst_n}} {{/Transmit_tb/AD_data}} {{/Transmit_tb/digital_sig}} {{/Transmit_tb/only_digital}} {{/Transmit_tb/digital_sig_ok}} {{/Transmit_tb/conbined_wave}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:53 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2458] undeclared symbol keydown_flag, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+WARNING: Simulation object /keyarray_tb/sys_clk was not found in the design.
+WARNING: Simulation object /keyarray_tb/rst_n was not found in the design.
+WARNING: Simulation object /keyarray_tb/col was not found in the design.
+WARNING: Simulation object /keyarray_tb/row was not found in the design.
+WARNING: Simulation object /keyarray_tb/key_out was not found in the design.
+WARNING: Simulation object /keyarray_tb/matrix_down_flag was not found in the design.
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/AD_data}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2458] undeclared symbol keydown_flag, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+WARNING: Simulation object /keyarray_tb/sys_clk was not found in the design.
+WARNING: Simulation object /keyarray_tb/rst_n was not found in the design.
+WARNING: Simulation object /keyarray_tb/col was not found in the design.
+WARNING: Simulation object /keyarray_tb/row was not found in the design.
+WARNING: Simulation object /keyarray_tb/key_out was not found in the design.
+WARNING: Simulation object /keyarray_tb/matrix_down_flag was not found in the design.
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/key_down_flag}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/key_out}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/key_input}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2154.301 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:51 . Memory (MB): peak = 2154.301 ; gain = 0.000
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+run all
+run: Time (s): cpu = 00:00:41 ; elapsed = 00:03:35 . Memory (MB): peak = 2154.301 ; gain = 0.000
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/freq_config_reg}} 
+run all
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2154.301 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 2154.301 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 2154.301 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/FM_wave}} {{/Transmit_tb/u_Transmit_top/u_AM/conbined_wave}} {{/Transmit_tb/u_Transmit_top/u_AM/send_data_package}} {{/Transmit_tb/u_Transmit_top/u_AM/transmit_state}} 
+remove_forces { {/Transmit_tb/key_input} {/Transmit_tb/u_Transmit_top/u_AM/key_out} {/Transmit_tb/u_Transmit_top/u_AM/key_down_flag} }
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2154.301 ; gain = 0.000
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_sig}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/analog_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/analog_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_done_reg}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2159.363 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Transmit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Transmit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/AD_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/FM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AM
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/Transmit_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen
+INFO: [VRFC 10-2458] undeclared symbol clk_out1, assumed default net type wire [F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/clk_gen.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/key_det.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_det
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/matrix_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrix_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/Transmit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmit_tb
+"xvhdl --incr --relax -prj Transmit_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xbip_utils_v3_0_9 -L axi_utils_v2_0_5 -L xbip_pipe_v3_0_5 -L xbip_bram18k_v3_0_5 -L mult_gen_v12_0_14 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_5 -L xbip_dsp48_multadd_v3_0_5 -L dds_compiler_v6_0_17 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Transmit_tb_behav xil_defaultlib.Transmit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_utils_v3_0_9.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_17.pkg_dds_compiler_v6_0_17
+Compiling package dds_compiler_v6_0_17.dds_compiler_v6_0_17_hdl_comps
+Compiling package xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv_comp
+Compiling package axi_utils_v2_0_5.axi_utils_v2_0_5_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_5.global_util_pkg
+Compiling package axi_utils_v2_0_5.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_17.pkg_betas
+Compiling package dds_compiler_v6_0_17.pkg_alphas
+Compiling module xil_defaultlib.matrix_key
+Compiling module xil_defaultlib.seg_led
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_gen
+Compiling module xil_defaultlib.AD_samp
+Compiling module xil_defaultlib.key_det
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_rdy [\dds_compiler_v6_0_17_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.pipe_add [\pipe_add(c_width=24,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_core [\dds_compiler_v6_0_17_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17_viv [\dds_compiler_v6_0_17_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_17.dds_compiler_v6_0_17 [\dds_compiler_v6_0_17(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.AM_default
+Compiling module xil_defaultlib.Transmit_top
+Compiling module xil_defaultlib.Transmit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Transmit_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2159.363 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Transmit_tb_behav -key {Behavioral:sim_1:Functional:Transmit_tb} -tclbatch {Transmit_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:05:11 . Memory (MB): peak = 2159.363 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:05:12 . Memory (MB): peak = 2159.363 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:05:20 . Memory (MB): peak = 2159.363 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_state}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/send_data_package}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_sig}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/conbined_wave_reg}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/analog_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/analog_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_done_reg}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2159.363 ; gain = 0.000
+run all

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/impl/func/xsim/bin2BCD_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2BCD
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sim_1/new/bin2BCD_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2BCD_tb

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  9 12:14:44 2021
+# Process ID: 5965
+# Current directory: /media/lyjslay/SteamLib/DianSai/2021/CarrierWave
+# Command line: vivado
+# Log file: /media/lyjslay/SteamLib/DianSai/2021/CarrierWave/vivado.log
+# Journal file: /media/lyjslay/SteamLib/DianSai/2021/CarrierWave/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/lyjslay/SteamLib/DianSai/2021/CarrierWave/CarrierWave.xpr
+INFO: [Project 1-313] Project file moved from 'F:/DianSai/2021/CarrierWave' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6370.586 ; gain = 110.473 ; free physical = 11021 ; free virtual = 20850
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Nov  9 12:15:16 2021] Launched synth_1...
+Run output will be captured here: /media/lyjslay/SteamLib/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Tue Nov  9 12:15:16 2021] Launched impl_1...
+Run output will be captured here: /media/lyjslay/SteamLib/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  9 12:48:03 2021...

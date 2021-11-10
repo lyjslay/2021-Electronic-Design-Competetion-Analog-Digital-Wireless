@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 13:25:50 2021
+# Process ID: 11228
+# Current directory: F:/DianSai/2021/Recieve/Recieve/Recieve.runs/synth_1
+# Command line: vivado.exe -log Recv_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Recv_top.tcl
+# Log file: F:/DianSai/2021/Recieve/Recieve/Recieve.runs/synth_1/Recv_top.vds
+# Journal file: F:/DianSai/2021/Recieve/Recieve/Recieve.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Recv_top.tcl -notrace
+Command: synth_design -top Recv_top -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11884 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 430.477 ; gain = 98.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Recv_top' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/Recv_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reciever' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:23]
+	Parameter BAUD_CNT bound to: 25 - type: integer 
+	Parameter BAUD_CNT_HALF bound to: 12 - type: integer 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter ANALOG bound to: 4'b0010 
+	Parameter FEATURE bound to: 4'b0100 
+	Parameter DIGITAL bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:235]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:159]
+WARNING: [Synth 8-6014] Unused sequential element feature_data_reg_reg was removed.  [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'reciever' (1#1) [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v:23]
+INFO: [Synth 8-6157] synthesizing module 'bin2BCD_digital' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bin2BCD_digital' (2#1) [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/bin2BCD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_led' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/seg_led.v:23]
+	Parameter SEG_0 bound to: 8'b11000000 
+	Parameter SEG_1 bound to: 8'b11111001 
+	Parameter SEG_2 bound to: 8'b10100100 
+	Parameter SEG_3 bound to: 8'b10110000 
+	Parameter SEG_4 bound to: 8'b10011001 
+	Parameter SEG_5 bound to: 8'b10010010 
+	Parameter SEG_6 bound to: 8'b10000010 
+	Parameter SEG_7 bound to: 8'b11111000 
+	Parameter SEG_8 bound to: 8'b10000000 
+	Parameter SEG_9 bound to: 8'b10010000 
+	Parameter SEG_NONE bound to: 8'b11111111 
+	Parameter CLK_DIV_PERIOD bound to: 2500 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter MAIN bound to: 3'b001 
+	Parameter WRITE bound to: 3'b010 
+	Parameter LOW bound to: 1'b0 
+	Parameter HIGH bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'seg_led' (3#1) [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/seg_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DA_out' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v:23]
+	Parameter CNT_25M bound to: 2 - type: integer 
+	Parameter POSEDGE bound to: 0 - type: integer 
+	Parameter NEGEDGE bound to: 1 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element cnt_25m_reg was removed.  [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v:40]
+INFO: [Synth 8-4471] merging register 'DA_clk_reg_reg' into 'DA_state_reg' [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v:64]
+WARNING: [Synth 8-6014] Unused sequential element DA_clk_reg_reg was removed.  [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'DA_out' (4#1) [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Recv_top' (5#1) [F:/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/Recv_top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.203 ; gain = 154.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.203 ; gain = 154.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 486.203 ; gain = 154.699
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Synth 8-802] inferred FSM for state register 'recv_state_reg' in module 'reciever'
+INFO: [Synth 8-5546] ROM "recv_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "recv_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "recv_start" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "with_digital_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "shutdown_sig_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "analog_done_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "recv_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'seg_led'
+INFO: [Synth 8-5544] ROM "cnt_main" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                  ANALOG |                             0010 |                             0010
+                 FEATURE |                             0100 |                             0100
+                 DIGITAL |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'recv_state_reg' in module 'reciever'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                    MAIN |                               01 |                              001
+                   WRITE |                               10 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seg_led'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 525.379 ; gain = 193.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 26    
+	   3 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	  16 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   5 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 35    
+	   5 Input      4 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	  35 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   4 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 14    
+	  10 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 15    
+	  35 Input      1 Bit        Muxes := 2     
+	  36 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Recv_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+Module reciever 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 2     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  16 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   5 Input     14 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 1     
+	   3 Input     13 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 5     
+	  15 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 4     
+	  16 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+	  10 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 15    
+Module bin2BCD_digital 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 24    
+	   3 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 24    
+Module seg_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  35 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  35 Input      1 Bit        Muxes := 2     
+	  36 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 10    
+Module DA_out 
+Detailed RTL Component Info : 
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "u_reciever/recv_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'digital_sig_reg[0]' (FDRE) to 'digital_sig_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\digital_sig_reg[1] )
+INFO: [Synth 8-3886] merging instance 'u_seg_led/data_reg_reg[4]' (FDE) to 'u_seg_led/data_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_seg_led/data_reg_reg[5]' (FDE) to 'u_seg_led/data_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u_seg_led/data_reg_reg[6]' (FDE) to 'u_seg_led/data_reg_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_seg_led/data_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_seg_led/data_reg_reg[15] )
+INFO: [Synth 8-3886] merging instance 'u_DA_out/DA9764_data_reg_reg[0]' (FDRE) to 'u_DA_out/DA9764_data_reg_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------------+---------------+----------------+
+|Module Name | RTL Object         | Depth x Width | Implemented As | 
++------------+--------------------+---------------+----------------+
+|seg_led     | SCLK_reg           | 64x1          | LUT            | 
+|seg_led     | DIO_reg            | 64x1          | LUT            | 
+|Recv_top    | u_seg_led/SCLK_reg | 64x1          | LUT            | 
+|Recv_top    | u_seg_led/DIO_reg  | 64x1          | LUT            | 
++------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     6|
+|4     |LUT2   |    54|
+|5     |LUT3   |    40|
+|6     |LUT4   |    33|
+|7     |LUT5   |    74|
+|8     |LUT6   |   110|
+|9     |MUXF7  |     9|
+|10    |MUXF8  |     4|
+|11    |FDRE   |   174|
+|12    |FDSE   |    18|
+|13    |IBUF   |     3|
+|14    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+---------+------+
+|      |Instance     |Module   |Cells |
++------+-------------+---------+------+
+|1     |top          |         |   551|
+|2     |  u_DA_out   |DA_out   |    14|
+|3     |  u_reciever |reciever |   364|
+|4     |  u_seg_led  |seg_led  |   139|
++------+-------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 828.785 ; gain = 497.281
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 828.785 ; gain = 510.340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 828.785 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'F:/DianSai/2021/Recieve/Recieve/Recieve.runs/synth_1/Recv_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Recv_top_utilization_synth.rpt -pb Recv_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  7 13:26:16 2021...

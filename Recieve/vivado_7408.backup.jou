@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  9 19:57:04 2021
+# Process ID: 7408
+# Current directory: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve
+# Command line: vivado
+# Log file: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/vivado.log
+# Journal file: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source Recv_top.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/Recv_top/u_reciever/deAM_input}} {{/Recv_top/u_reciever/recv_analog_data}} {{/Recv_top/u_reciever/recv_analog_done}} {{/Recv_top/u_reciever/recv_digital_done}} {{/Recv_top/u_reciever/recv_digital_data}} {{/Recv_top/u_reciever/shutdown_sig}} {{/Recv_top/u_reciever/recv_start}} 
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/Recv_top/sys_clk}} {{/Recv_top/rst_n}} 
+restart
+restart
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top recv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+source recv_tb.tcl
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/sys_clk}} {{/recv_tb/u_reciever/rst_n}} {{/recv_tb/u_reciever/deAM_input}} {{/recv_tb/u_reciever/recv_analog_data}} {{/recv_tb/u_reciever/recv_analog_done}} {{/recv_tb/u_reciever/recv_digital_done}} {{/recv_tb/u_reciever/recv_digital_data}} {{/recv_tb/u_reciever/shutdown_sig}} 
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/recv_flag}} 
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/error}} 
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/analog_cnt}} {{/recv_tb/u_reciever/digital_cnt}} {{/recv_tb/u_reciever/feature_cnt}} {{/recv_tb/u_reciever/total_cnt}} 
+current_wave_config {recv_tb_behav.wcfg}
+add_wave {{/recv_tb/u_reciever/recv_state}} 
+restart
+restart
+run all
+close_sim
+close_sim

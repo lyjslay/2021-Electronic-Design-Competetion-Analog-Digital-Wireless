@@ -1,0 +1,1 @@
+-wto "fb6b2958b5034d3794810b3ba752f7cb" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "keyarray_tb_behav" "xil_defaultlib.keyarray_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

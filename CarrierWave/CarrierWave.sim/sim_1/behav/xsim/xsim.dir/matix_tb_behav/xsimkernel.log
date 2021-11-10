@@ -1,0 +1,7 @@
+Running: xsim.dir/matix_tb_behav/xsimk.exe -simmode gui -wdb matix_tb_behav.wdb -simrunnum 0 -socket 50779
+Design successfully loaded
+Design Loading Memory Usage: 5780 KB (Peak: 5780 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 14540 KB (Peak: 14540 KB)
+Simulation CPU Usage: 6750 ms

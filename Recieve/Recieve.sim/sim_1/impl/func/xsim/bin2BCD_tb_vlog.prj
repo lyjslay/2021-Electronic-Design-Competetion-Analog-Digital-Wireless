@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"bin2BCD_tb_func_impl.v" \
+"../../../../../Recieve.srcs/sim_1/new/bin2BCD_tb.v" \
+
+# Do not sort compile order
+nosort

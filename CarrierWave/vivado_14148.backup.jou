@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 00:16:20 2021
+# Process ID: 14148
+# Current directory: F:/DianSai/2021/CarrierWave
+# Command line: vivado.exe F:\DianSai\2021\CarrierWave\CarrierWave.xpr
+# Log file: F:/DianSai/2021/CarrierWave/vivado.log
+# Journal file: F:/DianSai/2021/CarrierWave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/DianSai/2021/CarrierWave/CarrierWave.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v w ]
+add_files -fileset sim_1 F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top led_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source led_tb.tcl
+restart
+restart
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/led_tb/sys_clk}} {{/led_tb/rst_n}} {{/led_tb/bit0}} {{/led_tb/bit1}} {{/led_tb/bit2}} {{/led_tb/bit3}} {{/led_tb/ok_sig}} {{/led_tb/sclk}} {{/led_tb/rclk}} {{/led_tb/DIO}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/led_tb/u_seg_led/bit0_reg}} {{/led_tb/u_seg_led/bit1_reg}} {{/led_tb/u_seg_led/bit2_reg}} {{/led_tb/u_seg_led/bit3_reg}} {{/led_tb/u_seg_led/bit0_seg}} {{/led_tb/u_seg_led/bit1_seg}} {{/led_tb/u_seg_led/bit2_seg}} {{/led_tb/u_seg_led/bit3_seg}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/led_tb/u_seg_led/state}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/led_tb/u_seg_led/clk_div}} {{/led_tb/u_seg_led/cnt_main}} {{/led_tb/u_seg_led/cnt_write}} 
+restart
+restart
+restart
+run all
+run all
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/led_tb/u_seg_led/data_reg}} 
+restart
+restart
+run all
+run all
+restart
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source led_tb.tcl
+restart
+restart
+run all
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim

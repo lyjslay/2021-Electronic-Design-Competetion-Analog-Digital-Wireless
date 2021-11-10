@@ -1,0 +1,7 @@
+Running: xsim.dir/keyarray_tb_behav/xsimk.exe -simmode gui -wdb keyarray_tb_behav.wdb -simrunnum 0 -socket 54275
+Design successfully loaded
+Design Loading Memory Usage: 5776 KB (Peak: 5776 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 14420 KB (Peak: 14420 KB)
+Simulation CPU Usage: 5030 ms

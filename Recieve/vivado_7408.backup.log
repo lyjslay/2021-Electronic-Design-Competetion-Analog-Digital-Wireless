@@ -1,0 +1,205 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  9 19:57:04 2021
+# Process ID: 7408
+# Current directory: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve
+# Command line: vivado
+# Log file: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/vivado.log
+# Journal file: /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Recv_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj Recv_top_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DA_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/bin2BCD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bin2bcd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reciever
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/Recv_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Recv_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 9b118ad5435c48be8b1e8d948dde1e1b --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Recv_top_behav xil_defaultlib.Recv_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reciever
+Compiling module xil_defaultlib.bin2bcd
+Compiling module xil_defaultlib.seg_led
+Compiling module xil_defaultlib.DA_out
+Compiling module xil_defaultlib.Recv_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Recv_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim/xsim.dir/Recv_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  9 19:58:00 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Recv_top_behav -key {Behavioral:sim_1:Functional:Recv_top} -tclbatch {Recv_top.tcl} -view {/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+WARNING: Simulation object /bin2BCD_tb/sys_clk was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/rst_n was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/start was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/bin was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/bcd was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/valid was not found in the design.
+source Recv_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Recv_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6513.348 ; gain = 60.145 ; free physical = 10867 ; free virtual = 21402
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/Recv_top/u_reciever/deAM_input}} {{/Recv_top/u_reciever/recv_analog_data}} {{/Recv_top/u_reciever/recv_analog_done}} {{/Recv_top/u_reciever/recv_digital_done}} {{/Recv_top/u_reciever/recv_digital_data}} {{/Recv_top/u_reciever/shutdown_sig}} {{/Recv_top/u_reciever/recv_start}} 
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/Recv_top/sys_clk}} {{/Recv_top/rst_n}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property top recv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'recv_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj recv_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sim_1/new/recv_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module recv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto 9b118ad5435c48be8b1e8d948dde1e1b --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot recv_tb_behav xil_defaultlib.recv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.reciever
+Compiling module xil_defaultlib.recv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot recv_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim/xsim.dir/recv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  9 20:01:19 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "recv_tb_behav -key {Behavioral:sim_1:Functional:recv_tb} -tclbatch {recv_tb.tcl} -view {/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config /media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/recv_tb_behav.wcfg
+WARNING: Simulation object /bin2BCD_tb/sys_clk was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/rst_n was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/start was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/bin was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/bcd was not found in the design.
+WARNING: Simulation object /bin2BCD_tb/valid was not found in the design.
+source recv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'recv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6603.336 ; gain = 57.844 ; free physical = 10077 ; free virtual = 20879
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/recv_tb/u_reciever/sys_clk}} {{/recv_tb/u_reciever/rst_n}} {{/recv_tb/u_reciever/deAM_input}} {{/recv_tb/u_reciever/recv_analog_data}} {{/recv_tb/u_reciever/recv_analog_done}} {{/recv_tb/u_reciever/recv_digital_done}} {{/recv_tb/u_reciever/recv_digital_data}} {{/recv_tb/u_reciever/shutdown_sig}} 
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/recv_tb/u_reciever/recv_flag}} 
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/recv_tb/u_reciever/error}} 
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/recv_tb/u_reciever/analog_cnt}} {{/recv_tb/u_reciever/digital_cnt}} {{/recv_tb/u_reciever/feature_cnt}} {{/recv_tb/u_reciever/total_cnt}} 
+current_wave_config {recv_tb_behav.wcfg}
+recv_tb_behav.wcfg
+add_wave {{/recv_tb/u_reciever/recv_state}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6603.336 ; gain = 0.000 ; free physical = 9744 ; free virtual = 20879
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  9 20:06:47 2021...

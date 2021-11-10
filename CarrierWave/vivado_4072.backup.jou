@@ -1,0 +1,206 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 14:50:05 2021
+# Process ID: 4072
+# Current directory: F:/DianSai/2021/CarrierWave
+# Command line: vivado.exe F:\DianSai\2021\CarrierWave\CarrierWave.xpr
+# Log file: F:/DianSai/2021/CarrierWave/vivado.log
+# Journal file: F:/DianSai/2021/CarrierWave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/DianSai/2021/CarrierWave/CarrierWave.xpr
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+create_fileset -constrset constrs_2
+add_files -fileset constrs_2 -norecurse F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+export_ip_user_files -of_objects  [get_files F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 F:/DianSai/2021/CarrierWave/CarrierWave.srcs/constrs_1/new/CarrierWaveNew.xdc
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top keyarray_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source keyarray_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/keyarray_tb/sys_clk}} {{/keyarray_tb/rst_n}} {{/keyarray_tb/col}} {{/keyarray_tb/row}} {{/keyarray_tb/key_out}} {{/keyarray_tb/matrix_down_flag}} 
+restart
+restart
+run all
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source keyarray_tb.tcl
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source keyarray_tb.tcl
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property constrset constrs_1 [get_runs synth_1]
+set_property constrset constrs_1 [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Transmit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/sys_clk}} {{/Transmit_tb/rst_n}} {{/Transmit_tb/AD_data}} {{/Transmit_tb/digital_sig}} {{/Transmit_tb/only_digital}} {{/Transmit_tb/digital_sig_ok}} {{/Transmit_tb/conbined_wave}} 
+restart
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/AD_data}} 
+restart
+restart
+run all
+restart
+restart
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/key_down_flag}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/key_out}} 
+restart
+restart
+run all
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/key_input}} 
+restart
+restart
+restart
+restart
+run all
+run all
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+run all
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/freq_config_reg}} 
+run all
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/FM_wave}} {{/Transmit_tb/u_Transmit_top/u_AM/conbined_wave}} {{/Transmit_tb/u_Transmit_top/u_AM/send_data_package}} {{/Transmit_tb/u_Transmit_top/u_AM/transmit_state}} 
+remove_forces { {/Transmit_tb/key_input} {/Transmit_tb/u_Transmit_top/u_AM/key_out} {/Transmit_tb/u_Transmit_top/u_AM/key_down_flag} }
+restart
+restart
+run all
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_sig}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/analog_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/analog_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_done_reg}} 
+restart
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source Transmit_tb.tcl
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_state}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/send_data_package}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/transmit_sig}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/conbined_wave_reg}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+add_wave {{/Transmit_tb/u_Transmit_top/u_AM/analog_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/analog_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/digital_done_reg}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_cnt}} {{/Transmit_tb/u_Transmit_top/u_AM/feature_done_reg}} 
+restart
+restart
+restart
+run all
+run all

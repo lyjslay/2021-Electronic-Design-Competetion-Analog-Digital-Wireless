@@ -1,0 +1,98 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Nov 10 11:47:34 2021
+| Host         : DESKTOP-I75IHQ5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Transmit_top_control_sets_placed.rpt
+| Design       : Transmit_top
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    84 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      4 |            9 |
+|      5 |            1 |
+|      6 |            1 |
+|      8 |            2 |
+|     11 |            1 |
+|     12 |            1 |
+|     13 |            1 |
+|     14 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             127 |           49 |
+| Yes          | No                    | No                     |             147 |           44 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              98 |           35 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|             Clock Signal             |               Enable Signal               |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++--------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG                   | u_seg_led/SCLK_reg                        | u_AM/u_key_det/SR[0]                      |                1 |              1 |
+|  sys_clk_IBUF_BUFG                   | u_seg_led/DIO_reg                         | u_AM/u_key_det/SR[0]                      |                1 |              1 |
+|  sys_clk_IBUF_BUFG                   | u_seg_led/RCLK_reg                        | u_AM/u_key_det/SR[0]                      |                1 |              1 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/E[0]                         | u_matrix_key/matrix_keydown_flag_reg_2[0] |                2 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/key_out_reg[3]_i_1_n_0       | u_AM/u_key_det/SR[0]                      |                2 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/key_out_reg_reg[3]_1[0]      | u_matrix_key/SR[0]                        |                1 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/matrix_keydown_flag_reg_1[0] |                                           |                2 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/matrix_keydown_flag_reg_5[0] | u_matrix_key/SR[0]                        |                2 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/matrix_keydown_flag_reg_7[0] | u_matrix_key/SR[0]                        |                1 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/matrix_keydown_flag_reg_6[0] | u_matrix_key/SR[0]                        |                1 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_AM/analog_cnt                           | u_AM/u_key_det/SR[0]                      |                1 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_matrix_key/clk_200hz_posedge_reg_n_0    | u_AM/u_key_det/SR[0]                      |                1 |              4 |
+|  sys_clk_IBUF_BUFG                   | u_AM/u_key_det/keydown_flag_reg           | u_AM/u_key_det/SR[0]                      |                2 |              5 |
+|  sys_clk_IBUF_BUFG                   | u_seg_led/cnt_write                       | u_AM/u_key_det/SR[0]                      |                3 |              6 |
+|  sys_clk_IBUF_BUFG                   |                                           |                                           |                7 |              8 |
+|  sys_clk_IBUF_BUFG                   |                                           | u_AD_samp/ad_sync_done_reg_reg_0[0]       |                4 |              8 |
+|  sys_clk_IBUF_BUFG                   | u_seg_led/data_reg[14]_i_1_n_0            |                                           |                8 |             11 |
+|  sys_clk_IBUF_BUFG                   | u_AD_samp/chanA_data_reg                  | u_AM/u_key_det/SR[0]                      |                5 |             12 |
+|  sys_clk_IBUF_BUFG                   |                                           | u_AM/u_key_det/delay_cnt[15]_i_1_n_0      |                4 |             13 |
+|  sys_clk_IBUF_BUFG                   | u_AM/send_data_package[15]_i_1_n_0        |                                           |                4 |             14 |
+|  sys_clk_IBUF_BUFG                   |                                           | u_seg_led/cnt[0]_i_1__0_n_0               |                4 |             16 |
+|  sys_clk_IBUF_BUFG                   | u_seg_led/bit3_reg                        | u_AM/u_key_det/SR[0]                      |                4 |             16 |
+|  sys_clk_IBUF_BUFG                   | u_AM/u_key_det/E[0]                       | u_AM/u_key_det/SR[0]                      |                7 |             24 |
+|  sys_clk_IBUF_BUFG                   |                                           | u_AM/u_key_det/SR[0]                      |               37 |             90 |
+|  u_clk_gen/pll_clk_gen/inst/clk_out1 | rst_n_IBUF                                |                                           |               30 |            119 |
++--------------------------------------+-------------------------------------------+-------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sim_1/new/recv_tb.v,1636261337,verilog,,,,recv_tb,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/DA_out.v,1635922166,verilog,,/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/bin2BCD.v,,DA_out,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/Recv_top.v,1636270701,verilog,,,,Recv_top,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/bin2BCD.v,1636270200,verilog,,/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v,,bin2bcd,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/reciever.v,1636261057,verilog,,/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sim_1/new/recv_tb.v,,reciever,,,,,,,,
+/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/seg_led.v,1636260719,verilog,,/media/lyjslay/SteamLib/DianSai/2021/Recieve/Recieve/Recieve.srcs/sources_1/new/Recv_top.v,,seg_led,,,,,,,,

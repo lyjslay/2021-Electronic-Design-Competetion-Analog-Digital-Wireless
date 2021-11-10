@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  7 00:16:20 2021
+# Process ID: 14148
+# Current directory: F:/DianSai/2021/CarrierWave
+# Command line: vivado.exe F:\DianSai\2021\CarrierWave\CarrierWave.xpr
+# Log file: F:/DianSai/2021/CarrierWave/vivado.log
+# Journal file: F:/DianSai/2021/CarrierWave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/DianSai/2021/CarrierWave/CarrierWave.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado2018_3/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 774.570 ; gain = 161.918
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v w ]
+add_files -fileset sim_1 F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v
+update_compile_order -fileset sim_1
+set_property top led_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'led_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj led_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot led_tb_behav xil_defaultlib.led_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_led
+Compiling module xil_defaultlib.led_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot led_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim/xsim.dir/led_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov  7 00:25:36 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "led_tb_behav -key {Behavioral:sim_1:Functional:led_tb} -tclbatch {led_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+WARNING: Simulation object /matix_tb/sys_clk was not found in the design.
+WARNING: Simulation object /matix_tb/rst_n was not found in the design.
+WARNING: Simulation object /matix_tb/row_data was not found in the design.
+WARNING: Simulation object /matix_tb/col_data was not found in the design.
+WARNING: Simulation object /matix_tb/key_value was not found in the design.
+WARNING: Simulation object /matix_tb/key_flag was not found in the design.
+source led_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+$finish called at time : 0 fs : File "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" Line 88
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'led_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 936.629 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/led_tb/sys_clk}} {{/led_tb/rst_n}} {{/led_tb/bit0}} {{/led_tb/bit1}} {{/led_tb/bit2}} {{/led_tb/bit3}} {{/led_tb/ok_sig}} {{/led_tb/sclk}} {{/led_tb/rclk}} {{/led_tb/DIO}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/led_tb/u_seg_led/bit0_reg}} {{/led_tb/u_seg_led/bit1_reg}} {{/led_tb/u_seg_led/bit2_reg}} {{/led_tb/u_seg_led/bit3_reg}} {{/led_tb/u_seg_led/bit0_seg}} {{/led_tb/u_seg_led/bit1_seg}} {{/led_tb/u_seg_led/bit2_seg}} {{/led_tb/u_seg_led/bit3_seg}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/led_tb/u_seg_led/state}} 
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/led_tb/u_seg_led/clk_div}} {{/led_tb/u_seg_led/cnt_main}} {{/led_tb/u_seg_led/cnt_write}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$finish called at time : 0 fs : File "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" Line 88
+run all
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 936.629 ; gain = 0.000
+current_wave_config {Transmit_tb_behav.wcfg}
+Transmit_tb_behav.wcfg
+add_wave {{/led_tb/u_seg_led/data_reg}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$finish called at time : 0 fs : File "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" Line 88
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+save_wave_config {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado2018_3/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'led_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj led_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sources_1/new/seg_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado2018_3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fb6b2958b5034d3794810b3ba752f7cb --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot led_tb_behav xil_defaultlib.led_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg_led
+Compiling module xil_defaultlib.led_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot led_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/DianSai/2021/CarrierWave/CarrierWave.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "led_tb_behav -key {Behavioral:sim_1:Functional:led_tb} -tclbatch {led_tb.tcl} -view {F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config F:/DianSai/2021/CarrierWave/Transmit_tb_behav.wcfg
+source led_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000000000ns
+$finish called at time : 0 fs : File "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" Line 88
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'led_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000000000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 936.629 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$finish called at time : 0 fs : File "F:/DianSai/2021/CarrierWave/CarrierWave.srcs/sim_1/new/led_tb.v" Line 88
+run all
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 00:44:41 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 00:44:41 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/21025DA1030A
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {mt25ql128-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 01:07:47 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 01:07:47 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Sun Nov  7 01:41:19 2021] Launched synth_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/synth_1/runme.log
+[Sun Nov  7 01:41:19 2021] Launched impl_1...
+Run output will be captured here: F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {F:/DianSai/2021/CarrierWave/CarrierWave.runs/impl_1/Transmit_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  7 01:46:48 2021...
